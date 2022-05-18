@@ -1,0 +1,13 @@
+root: true
+env:
+  browser: true
+  jest: true
+extends: ['standard-with-typescript', 'plugin:react/jsx-runtime', 'next/core-web-vitals']
+parser: '@typescript-eslint/parser'
+parserOptions:
+  project: ['tsconfig.json', 'src', 'test']
+settings:
+  react:
+    version: detect
+ignorePatterns: ['dist', 'build', 'node_modules']
+rules: { '@typescript-eslint/space-before-function-paren': ['error', 'never'] }
