@@ -1,13 +1,7 @@
 import { ReactElement } from 'react'
-import GlobalStyled from '../styles/global.styled'
 
 function MyApp({ Component, pageProps }): ReactElement {
-  return (
-    <>
-      <Component {...pageProps} />
-      <GlobalStyled />
-    </>
-  )
+  return <Component {...pageProps} />
 }
 
 export default MyApp
