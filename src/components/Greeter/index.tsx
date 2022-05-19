@@ -1,5 +1,5 @@
 import { FC, ReactElement } from 'react'
-import { Wrapper, Font } from './greeter.styled'
+import { Wrapper, Font } from '@components/Greeter/styled'
 
 const Greeter: FC<{}> = (): ReactElement => {
   return (

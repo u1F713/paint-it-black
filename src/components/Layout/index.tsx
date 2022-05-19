@@ -1,8 +1,8 @@
 import React, { FC, ReactElement, ReactNode } from 'react'
 import { ThemeProvider } from 'styled-components'
-import GlobalStyle from '../../styles/global.styled'
-import theme from '../../styles/theme.styled.json'
-import * as Styled from './Layout.styed'
+import GlobalStyle from '@styles/global.styled'
+import theme from '@styles/theme.styled.json'
+import * as Styled from './styled'
 
 interface LayoutProps {
   children: ReactNode | ReactNode[]

@@ -1,6 +1,6 @@
 import { NextPage } from 'next'
-import Layout from '../components/layout'
-import Greeter from '../components/Greeter'
+import Layout from '@components/Layout'
+import Greeter from '@components/Greeter'
 
 const Index: NextPage<{}> = () => {
   return (
