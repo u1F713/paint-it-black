@@ -5,10 +5,10 @@ export const Wrapper = styled.main`
   min-height: 100vh;
   justify-content: center;
   align-items: center;
-  background-color: ${(props) => props.theme.bg};
+  background-color: ${(props) => props.theme.colors.bg};
 `
 
 export const Font = styled.h1`
   font-size: 3em;
-  color: ${(props) => props.theme.fg1};
+  color: ${(props) => props.theme.colors.fg};
 `
