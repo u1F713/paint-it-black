@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://res.cloudinary.com/dmfac7zfe/image/upload/v1645805977/icons/neco-arc_run.jpg" width="320" alt="Neco-Arc run" />
+  <img src="https://res.cloudinary.com/dmfac7zfe/image/upload/v1637171774/icons/Nightingale.webp" width="320" alt="Neco-Arc run" />
 </p>
 
 ## Description
