@@ -15,7 +15,6 @@ specifiers:
   eslint-plugin-node: ^11.1.0
   eslint-plugin-prettier: ^4.0.0
   eslint-plugin-promise: ^6.0.0
-  eslint-plugin-react: ^7.29.4
   next: 12.1.6
   prettier: ^2.6.2
   react: 18.1.0
@@ -43,7 +42,6 @@ devDependencies:
   eslint-plugin-node: 11.1.0_eslint@8.15.0
   eslint-plugin-prettier: 4.0.0_iqftbjqlxzn3ny5nablrkczhqi
   eslint-plugin-promise: 6.0.0_eslint@8.15.0
-  eslint-plugin-react: 7.29.4_eslint@8.15.0
   prettier: 2.6.2
   styled-components: 5.3.5_ef5jwxihqo6n7gxfmzogljlgcm
   typescript: 4.6.4
