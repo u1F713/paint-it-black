@@ -1,15 +1,25 @@
 import { NextPage } from 'next'
 import Layout from '@components/Layout'
-import Container from '~/components/Container'
 import Card from '~/components/Card'
 
-const Index: NextPage<{}> = () => {
+interface PageProps {
+  pokemons: any
+}
+
+const Index: NextPage<PageProps> = ({ pokemons }) => {
   return (
     <Layout>
-      <Container>
-        <Card name="hu tao" id={1} />
-      </Container>
+      {pokemons.results.map((pokemon, index) => (
+        <Card name={pokemon.name} url={new URL(pokemon.url)} key={index} />
+      ))}
     </Layout>
   )
 }
+
+Index.getInitialProps = async () => {
+  const result = await fetch('https://pokeapi.co/api/v2/pokemon/')
+  const data = await result.json()
+  return { pokemons: data }
+}
+
 export default Index

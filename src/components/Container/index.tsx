@@ -2,7 +2,7 @@ import { FC, ReactElement, ReactNode } from 'react'
 import { ContainerStyled } from './Container.styled'
 
 interface ContainerProps {
-  children: ReactNode
+  children: ReactNode | ReactNode[]
 }
 
 const Container: FC<ContainerProps> = ({ children }): ReactElement => {
