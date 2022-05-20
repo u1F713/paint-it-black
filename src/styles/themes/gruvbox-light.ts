@@ -4,7 +4,9 @@ const GruvboxLight: DefaultTheme = {
   isDark: false,
   colors: {
     bg: ' #fbf1c7',
-    fg: '#282828'
+    bg_1: '#ebdbb2',
+    fg: '##282828',
+    border: '#d5c4a1'
   }
 }
 export default GruvboxLight

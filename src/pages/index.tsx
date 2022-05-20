@@ -1,11 +1,14 @@
 import { NextPage } from 'next'
 import Layout from '@components/Layout'
-import Greeter from '@components/Greeter'
+import Container from '~/components/Container'
+import Card from '~/components/Card'
 
 const Index: NextPage<{}> = () => {
   return (
     <Layout>
-      <Greeter />
+      <Container>
+        <Card name="hu tao" id={1} />
+      </Container>
     </Layout>
   )
 }

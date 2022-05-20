@@ -15,7 +15,7 @@ export default createGlobalStyle`
   html,body{
     font-family:  Ubuntu Mono, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
       Roboto, Oxygen, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+    font-size: 18px;
     line-height: 0.8;
   }
 `
