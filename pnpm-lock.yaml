@@ -6,7 +6,6 @@ specifiers:
   '@types/styled-components': ^5.1.25
   '@typescript-eslint/eslint-plugin': ^5.19.0
   '@typescript-eslint/parser': ^5.19.0
-  babel-plugin-styled-components: ^2.0.7
   eslint: ^8.13.0
   eslint-config-next: 12.1.6
   eslint-config-prettier: ^8.5.0
@@ -33,7 +32,6 @@ devDependencies:
   '@types/styled-components': 5.1.25
   '@typescript-eslint/eslint-plugin': 5.25.0_qo2hgs5jt7x2a3p77h2rutcdae
   '@typescript-eslint/parser': 5.25.0_hcfsmds2fshutdssjqluwm76uu
-  babel-plugin-styled-components: 2.0.7_styled-components@5.3.5
   eslint: 8.15.0
   eslint-config-next: 12.1.6_6vdljae35l7howjttefzzsim3e
   eslint-config-prettier: 8.5.0_eslint@8.15.0
