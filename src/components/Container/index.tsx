@@ -7,7 +7,7 @@ interface ContainerProps {
 
 const Container: FC<ContainerProps> = ({ children }): ReactElement => {
   return (
-    <ContainerStyled witd={700}>
+    <ContainerStyled witd={900}>
       <section>{children} </section>
     </ContainerStyled>
   )

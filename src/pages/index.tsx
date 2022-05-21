@@ -1,6 +1,8 @@
 import { NextPage } from 'next'
 import Layout from '@components/Layout'
 import Card from '~/components/Card'
+import Gallery from '~/components/Gallery'
+import Container from '~/components/Container'
 
 interface PageProps {
   pokemons: any
@@ -9,9 +11,13 @@ interface PageProps {
 const Index: NextPage<PageProps> = ({ pokemons }) => {
   return (
     <Layout>
-      {pokemons.results.map((pokemon, index) => (
-        <Card name={pokemon.name} url={new URL(pokemon.url)} key={index} />
-      ))}
+      <Container>
+        <Gallery>
+          {pokemons.results.map((pokemon, index) => (
+            <Card name={pokemon.name} url={new URL(pokemon.url)} key={index} />
+          ))}
+        </Gallery>
+      </Container>
     </Layout>
   )
 }

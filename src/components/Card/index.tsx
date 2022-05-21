@@ -25,7 +25,7 @@ const Card: FC<Props> = ({ name, url }): ReactElement => {
         <Sprites src="https://res.cloudinary.com/dmfac7zfe/image/upload/v1653054193/icons/Character_Hu_Tao_Chibi_Sticker_1.webp" />
       </figure>
       <div className="content-body">
-        <span className="number-id">{pokemon.id}</span>
+        <span className="number-id">#{pokemon.id}</span>
         <Name>{name}</Name>
       </div>
     </CardStyled>
