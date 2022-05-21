@@ -1,5 +1,6 @@
 import { FC, ReactElement, useEffect, useState } from 'react'
 import { IPokemon } from '~/interfaces/pokemon'
+import PokemonType from '../PokemonType'
 import { CardStyled, Name, Sprites } from './Card.styled'
 
 interface Props {
@@ -26,6 +27,9 @@ const Card: FC<Props> = ({ name, url }): ReactElement => {
       <div className="content-body">
         <span className="number-id">#{pokemon?.id}</span>
         <Name>{name}</Name>
+        {pokemon?.types.map((type, key: number) => (
+          <PokemonType url={type.type.url} key={key} />
+        ))}
       </div>
     </CardStyled>
   )
