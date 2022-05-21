@@ -1,10 +1,7 @@
 import styled from 'styled-components'
 
 export const ContentCenter = styled.div`
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: start;
-  align-items: flex-start;
-  width: fit-content;
-  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
 `
