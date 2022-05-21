@@ -1,4 +1,5 @@
 import { FC, ReactElement, useEffect, useState } from 'react'
+import { IPokemon } from '~/interfaces/pokemon'
 import { CardStyled, Name, Sprites } from './Card.styled'
 
 interface Props {
@@ -7,9 +8,7 @@ interface Props {
 }
 
 const Card: FC<Props> = ({ name, url }): ReactElement => {
-  // console.log(url.pathname.split('/pokemon/')[1].replace('/', ''))
-
-  const [pokemon, setPokemon] = useState({ id: 0 })
+  const [pokemon, setPokemon] = useState<IPokemon>()
 
   useEffect(() => {
     async function fetchData(url: URL): Promise<any> {
@@ -22,10 +21,10 @@ const Card: FC<Props> = ({ name, url }): ReactElement => {
   return (
     <CardStyled SpriteSize={250}>
       <figure>
-        <Sprites src="https://res.cloudinary.com/dmfac7zfe/image/upload/v1653054193/icons/Character_Hu_Tao_Chibi_Sticker_1.webp" />
+        <Sprites src={pokemon?.sprites.front_default} />
       </figure>
       <div className="content-body">
-        <span className="number-id">#{pokemon.id}</span>
+        <span className="number-id">#{pokemon?.id}</span>
         <Name>{name}</Name>
       </div>
     </CardStyled>
